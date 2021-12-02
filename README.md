@@ -23,3 +23,6 @@ Akun harus di set ke publik,
 Untuk menambahkan followers & like nya ke akun utama kalian juga bisa tanpa login akun utama di termux,
 Sebelum menggunakan auto followers & like nya claim credit dulu minimal sampe dapet 10 credit abis itu stop,
 Balik ke menu tinggal jalanin auto like & followers nya.
+
+# how to use
+https://youtu.be/6FPmXgV5c4M
