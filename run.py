@@ -16,6 +16,7 @@ mbasic="https://mbasic.facebook.com{}"
 ###################awalan#####################
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
+
 def baner():
     clear()
     print(f"""
@@ -34,6 +35,7 @@ def baner():
 def agent():
     ua={"user-agent":usa,"version":"8.0.2","accept-encoding":"gzip","packagename":"com.datta.liker","device":"true","host":"rajecreation.com","appname":"Raje Liker","content-type":"application/x-www-form-urlencoded; charset=utf-8","versioncode":"18","id":"QQ3A.200605.002","token":"3075dda32ffbbe88"}
     return ua
+
 def useragent():
     try:
         usr=open("useragent").read()
@@ -113,6 +115,7 @@ def earn():
        return res["active"]
     else:
        print(f"\r{er}Failed earn credit")
+
 def follow(url):
     ua=agent()
     limit=earn()
@@ -134,6 +137,7 @@ def follow(url):
        print(f"\r{er}Profile not found")
        sleep(2)
        menu()
+
 def like(url):
     ua=agent()
     limit=earn()
@@ -153,6 +157,7 @@ def like(url):
         print(f"\r{er}Post not found")
         sleep(2)
         menu()
+
 def userinfo():
     print(f"{p}Login as : {c}{name}")
     print(f"{p}ID       : {c}{id}")
@@ -168,6 +173,7 @@ def menu():
 {c}00{ab}. {p}exit
 {ab}-----------------------------------------------{d}""")
     pilih_menu()
+
 def pilih_menu():
     choice=input(f"{pr}Select : {c}")
     if choice == "00" or choice == "0":
@@ -214,6 +220,8 @@ def pilih_menu():
     else:
        print(f"{er}Pilih yg bener coeg")
        pilih_menu()
+
+
 if __name__=="__main__":
    baner()
    usa=useragent()
