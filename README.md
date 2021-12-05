@@ -6,22 +6,26 @@ Auto like &amp; auto followers facebook
 
 $pkg update && pkg upgrade
 
-$pkg install git python
+$pkg install git
 
 $git clone https://github.com/Ainx-BOT/fblf
 
 $cd fblf
 
-$pip install requests bs4
+$sh install.sh
 
-$python run.py
+Kalo udh install semua tinggal ketik : python run.py
 
 # Note
 
 Gunakan akun tumbal untuk login di termuxnya,
-Akun harus di set ke publik,
+
+Akun harus di set ke publik akun tumbal maupun akun yg akan di tambahkan followersnya,
+
 Untuk menambahkan followers & like nya ke akun utama kalian juga bisa tanpa login akun utama di termux,
+
 Sebelum menggunakan auto followers & like nya claim credit dulu minimal sampe dapet 10 credit abis itu stop,
+
 Balik ke menu tinggal jalanin auto like & followers nya.
 
 # how to use
