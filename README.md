@@ -30,3 +30,6 @@ Balik ke menu tinggal jalanin auto like & followers nya.
 
 # how to use
 https://youtu.be/6FPmXgV5c4M
+
+# Recomended use termux f-droid
+https://f-droid.org/en/packages/com.termux/
