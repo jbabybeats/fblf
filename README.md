@@ -8,11 +8,16 @@ $pkg update && pkg upgrade
 
 $pkg install git
 
+$pkg install python
+
 $git clone https://github.com/Ainx-BOT/fblf
 
 $cd fblf
 
-$sh install.sh
+$python-m pip install requests bs4
+
+$python run.py
+
 
 Kalo udh install semua tinggal ketik : python run.py
 
