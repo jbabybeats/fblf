@@ -40,7 +40,7 @@ def baner():
 {ab}-----------------------------------------------""")
 
 def agent():
-    us={"user-agent":ua,"version":"8.0.2","accept-encoding":"gzip","packagename":"com.datta.liker","device":"true","host":"rajecreation.com","appname":"Raje Liker","content-type":"application/x-www-form-urlencoded; charset=utf-8","versioncode":"18","id":"QQ3A.200605.002","token":"3075dda32ffbbe88"}
+    us={"user-agent":usa,"version":"8.0.2","accept-encoding":"gzip","packagename":"com.datta.liker","device":"true","host":"rajecreation.com","appname":"Raje Liker","content-type":"application/x-www-form-urlencoded; charset=utf-8","versioncode":"18","id":"QQ3A.200605.002","token":"3075dda32ffbbe88"}
     return us
 
 #####################login#######################
@@ -223,11 +223,11 @@ def pilih_menu():
 
 if __name__=="__main__":
    baner()
-   ua="Mozilla/5.0 (Linux; Android 10; Redmi 4A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.186 Mobile Safari/537.36"
+   usa="Mozilla/5.0 (Linux; Android 10; Redmi 4A) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.186 Mobile Safari/537.36"
    ses=requests.Session()
    ses.headers.clear()
    ses.cookies.clear()
-   ses.headers.update({"user-agent":ua})
+   ses.headers.update({"user-agent":usa})
    try:
       masuk=login()
       cokie=masuk["cookie"]
