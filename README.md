@@ -18,9 +18,6 @@ $python-m pip install requests bs4
 
 $python run.py
 
-
-Kalo udh install semua tinggal ketik : python run.py
-
 # Note
 
 Gunakan akun tumbal untuk login di termuxnya,
