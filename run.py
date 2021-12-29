@@ -31,7 +31,7 @@ def baner():
         {p}{b}╠╣ ╠╩╗ {d} │  │├┴┐├┤ ├┤ │ ││
         {p}{b}╚  ╚═╝ {d} ┴─┘┴┴ ┴└─┘└  └─┘┴─┘
 {ab}-----------------------------------------------
-{d}Donate   : {g}https://saweria.co/FahmiDevs
+{d}Donate   : {g}https://saweria.co/FahmiDev
 {d}Message  : {g}https://wa.me/62881024612817
 {d}Restapi  : {g}https://ainxbot-id.herokuapp.com
 {d}Youtube  : {g}https://youtube.com/KuhakuTermux
